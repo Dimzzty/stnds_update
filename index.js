@@ -1786,9 +1786,6 @@ bot.onText(/\/deladmin(?:\s(\d+))?/, (msg, match) => {
     bot.sendMessage(chatId, `❌ User ${userId} is not an admin.`);
   }
 });
-const axios = require("axios");
-const fs = require("fs");
-
 bot.onText(/\/update/, async (msg) => {
     const chatId = msg.chat.id;
 
@@ -1812,4 +1809,3 @@ bot.onText(/\/update/, async (msg) => {
     }
 });
 console.log(chalk.cyan("open script telegram"));
-
